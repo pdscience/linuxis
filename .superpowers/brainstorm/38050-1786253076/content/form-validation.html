@@ -1,0 +1,67 @@
+<h2>Validação do Formulário</h2>
+<p class="subtitle">Como mostrar erros e sucesso no formulário de contato?</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Bordas + Mensagens Inline</h3>
+      <p>Erro: borda vermelha + mensagem abaixo. Sucesso: borda verde + mensagem. Sutil e direto.</p>
+      <div style="margin-top:12px;padding:12px;background:rgba(15,23,42,0.8);border:1px solid rgba(255,255,255,0.08);border-radius:8px">
+        <div style="margin-bottom:8px">
+          <div style="font-size:0.7rem;color:var(--text-dim);margin-bottom:4px">Email</div>
+          <div style="background:rgba(0,0,0,0.3);border:1px solid #ff4444;border-radius:6px;padding:8px;font-size:0.75rem;color:#ff6666">email@invalido</div>
+          <div style="font-size:0.65rem;color:#ff4444;margin-top:4px">⚠ Email inválido</div>
+        </div>
+        <div>
+          <div style="font-size:0.7rem;color:var(--text-dim);margin-bottom:4px">Nome</div>
+          <div style="background:rgba(0,0,0,0.3);border:1px solid #00ff88;border-radius:6px;padding:8px;font-size:0.75rem;color:var(--text-white)">João Silva</div>
+          <div style="font-size:0.65rem;color:#00ff88;margin-top:4px">✓ Nome válido</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Tooltips Flutuantes</h3>
+      <p>Mensagens aparecem como tooltips ao lado dos campos. Mais compacto.</p>
+      <div style="margin-top:12px;padding:12px;background:rgba(15,23,42,0.8);border:1px solid rgba(255,255,255,0.08);border-radius:8px">
+        <div style="display:flex;gap:8px;align-items:start;margin-bottom:8px">
+          <div style="flex:1">
+            <div style="font-size:0.7rem;color:var(--text-dim);margin-bottom:4px">Email</div>
+            <div style="background:rgba(0,0,0,0.3);border:1px solid #ff4444;border-radius:6px;padding:8px;font-size:0.75rem;color:#ff6666">email@invalido</div>
+          </div>
+          <div style="background:#ff4444;color:white;border-radius:6px;padding:6px 10px;font-size:0.65rem;margin-top:18px;white-space:nowrap">Email inválido</div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:start">
+          <div style="flex:1">
+            <div style="font-size:0.7rem;color:var(--text-dim);margin-bottom:4px">Nome</div>
+            <div style="background:rgba(0,0,0,0.3);border:1px solid #00ff88;border-radius:6px;padding:8px;font-size:0.75rem;color:var(--text-white)">João Silva</div>
+          </div>
+          <div style="background:#00ff88;color:#080c14;border-radius:6px;padding:6px 10px;font-size:0.65rem;margin-top:18px;white-space:nowrap">✓ Válido</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Toast Notifications</h3>
+      <p>Mensagens aparecem como notificações flutuantes no canto da tela.</p>
+      <div style="margin-top:12px;padding:12px;background:rgba(15,23,42,0.8);border:1px solid rgba(255,255,255,0.08);border-radius:8px;position:relative;min-height:100px">
+        <div style="background:rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:8px;font-size:0.75rem;color:var(--text-dim);margin-bottom:8px">Formulário aqui...</div>
+        <div style="position:absolute;top:8px;right:8px;background:#ff4444;color:white;border-radius:8px;padding:8px 12px;font-size:0.7rem;box-shadow:0 4px 12px rgba(255,68,68,0.3)">
+          <div style="font-weight:600">Erro</div>
+          <div style="font-size:0.6rem;opacity:0.9">Email inválido</div>
+        </div>
+        <div style="position:absolute;top:50px;right:8px;background:#00ff88;color:#080c14;border-radius:8px;padding:8px 12px;font-size:0.7rem;box-shadow:0 4px 12px rgba(0,255,136,0.3)">
+          <div style="font-weight:600">✓ Sucesso</div>
+          <div style="font-size:0.6rem;opacity:0.9">Mensagem enviada</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

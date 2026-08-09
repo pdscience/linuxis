@@ -1,0 +1,47 @@
+<h2>Layout da Página de Serviços</h2>
+<p class="subtitle">Como organizar os 8 cards de serviços?</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Grid 3 Colunas (Desktop)</h3>
+      <p>Layout em grade: 3 colunas no desktop, 2 no tablet, 1 no mobile. Cards uniformes com ícone, título e descrição curta.</p>
+      <div style="margin-top:12px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px">
+        <div style="background:rgba(0,136,255,0.1);border:1px solid rgba(0,240,255,0.2);border-radius:8px;padding:12px;text-align:center;font-size:0.75rem">🔧 Design</div>
+        <div style="background:rgba(0,136,255,0.1);border:1px solid rgba(0,240,255,0.2);border-radius:8px;padding:12px;text-align:center;font-size:0.75rem">📈 SEO</div>
+        <div style="background:rgba(0,136,255,0.1);border:1px solid rgba(0,240,255,0.2);border-radius:8px;padding:12px;text-align:center;font-size:0.75rem">🛒 E-Commerce</div>
+      </div>
+      <p style="margin-top:8px;font-size:0.85rem;color:var(--text-dim)">3 colunas desktop → 2 tablet → 1 mobile</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Grid 4 Colunas (Desktop)</h3>
+      <p>Layout mais denso: 4 colunas no desktop, 2 no tablet, 1 no mobile. Cards menores e compactos.</p>
+      <div style="margin-top:12px;display:grid;grid-template-columns:repeat(4,1fr);gap:6px">
+        <div style="background:rgba(0,136,255,0.1);border:1px solid rgba(0,240,255,0.2);border-radius:8px;padding:10px;text-align:center;font-size:0.7rem">🔧</div>
+        <div style="background:rgba(0,136,255,0.1);border:1px solid rgba(0,240,255,0.2);border-radius:8px;padding:10px;text-align:center;font-size:0.7rem">📈</div>
+        <div style="background:rgba(0,136,255,0.1);border:1px solid rgba(0,240,255,0.2);border-radius:8px;padding:10px;text-align:center;font-size:0.7rem">🛒</div>
+        <div style="background:rgba(0,136,255,0.1);border:1px solid rgba(0,240,255,0.2);border-radius:8px;padding:10px;text-align:center;font-size:0.7rem">🎧</div>
+      </div>
+      <p style="margin-top:8px;font-size:0.85rem;color:var(--text-dim)">4 colunas desktop → 2 tablet → 1 mobile</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Grid Assimétrico (Masonry)</h3>
+      <p>Layout masonry: cards de tamanhos diferentes se encaixam como um mosaico. Mais visual e dinâmico.</p>
+      <div style="margin-top:12px;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto auto;gap:8px">
+        <div style="background:rgba(0,136,255,0.1);border:1px solid rgba(0,240,255,0.2);border-radius:8px;padding:16px 12px;text-align:center;font-size:0.75rem">🔧 Design</div>
+        <div style="background:rgba(0,136,255,0.1);border:1px solid rgba(0,240,255,0.2);border-radius:8px;padding:8px;text-align:center;font-size:0.75rem">📈 SEO</div>
+        <div style="background:rgba(0,136,255,0.1);border:1px solid rgba(0,240,255,0.2);border-radius:8px;padding:20px 12px;text-align:center;font-size:0.75rem">🛒 E-Commerce</div>
+      </div>
+      <p style="margin-top:8px;font-size:0.85rem;color:var(--text-dim)">Mosaico com tamanhos variados</p>
+    </div>
+  </div>
+</div>
