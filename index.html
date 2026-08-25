@@ -1,285 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Google -->
-    <title>LinuXis - Tecnologia que Impulsiona o Futuro</title>
-    <meta name="description" content="LinuXis: Soluções tecnológicas futuristas, inteligência artificial, engenharia de software e infraestrutura quântica para empresas de alta performance.">
-    <meta name="keywords" content="LinuXis, tecnologia futurista, inteligência artificial, SEO, e-commerce, desenvolvimento web, soluções digitais">
-    <meta name="author" content="LinuXis Technologies">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://linuxis.tech/">
-
-    <!-- Open Graph / Redes Sociais -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="LinuXis - Tecnologia que Impulsiona o Futuro">
-    <meta property="og:description" content="Sistemas inteligentes, ecossistemas em nuvem e soluções digitais avançadas para transformar seu negócio.">
-    <meta property="og:url" content="https://linuxis.tech/">
-
-    <!-- Fontes Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Ícones Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Schema.org para SEO do Google -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "LinuXis",
-      "url": "https://linuxis.tech",
-      "slogan": "Tecnologia que Impulsiona o Futuro",
-      "description": "Desenvolvimento de soluções digitais futuristas, inteligência artificial e ecossistemas de alta performance."
-    }
-    </script>
-
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="LinuXis Tecnologia — informática, manutenção, software, desenvolvimento de sistemas e aplicativos.">
+<title>LinuXis Tecnologia | Tecnologia que impulsiona o futuro</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+<div id="progress"></div>
+<div id="cursor"></div>
 
-    <!-- Efeitos de Luz de Fundo -->
-    <div class="bg-effects">
-        <div class="glow-circle-1"></div>
-        <div class="glow-circle-2"></div>
-        <div class="grid-overlay"></div>
+<nav class="nav" id="nav">
+  <a href="#inicio">
+    <img src="assets/logo.png" alt="LinuXis" class="nav-logo">
+  </a>
+  <button class="menu" id="menu" aria-label="Abrir menu">☰</button>
+  <div class="nav-links" id="navLinks">
+    <a href="#servicos">Serviços</a>
+    <a href="#tecnologia">Tecnologia</a>
+    <a href="#sobre">Sobre</a>
+    <a class="nav-cta" href="#contato">Fale conosco</a>
+  </div>
+</nav>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-bg" data-speed=".14"></div>
+  <div class="grid" data-speed=".22"></div>
+  <div class="scan"></div>
+
+  <div class="circuit c1">
+    <svg viewBox="0 0 300 180">
+      <path d="M0 30H80V75H140V120H230V155H300"/>
+      <circle cx="80" cy="30" r="5"/><circle cx="140" cy="75" r="5"/>
+      <circle cx="230" cy="120" r="5"/><circle cx="300" cy="155" r="5"/>
+    </svg>
+  </div>
+  <div class="circuit c2">
+    <svg viewBox="0 0 330 220">
+      <path d="M0 180H90V140H145V90H220V40H330"/>
+      <circle cx="90" cy="140" r="5"/><circle cx="145" cy="90" r="5"/>
+      <circle cx="220" cy="40" r="5"/><circle cx="330" cy="40" r="5"/>
+    </svg>
+  </div>
+
+  <div class="hero-content reveal">
+    <div class="eyebrow"><i></i> Tecnologia • Suporte • Desenvolvimento</div>
+    <h1><span>TECNOLOGIA</span> <strong>QUE IMPULSIONA</strong><span>O FUTURO</span></h1>
+    <div class="tagline reveal">Soluções completas em tecnologia para transformar seu negócio</div>
+    <p>
+      Soluções completas em informática, manutenção, formatação, software,
+      desenvolvimento de sistemas e aplicativos — com tecnologia moderna,
+      segurança e foco no resultado.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#contato">Começar um projeto →</a>
+      <a class="btn btn-ghost" href="#servicos">Conhecer serviços</a>
+    </div>
+  </div>
+
+  <div class="logo-stage" data-speed=".09">
+    <img src="assets/hero-tech.png" alt="Cidade digital futurista com circuitos e energia ciano, no visual da LinuXis">
+  </div>
+  <div class="hero-light"></div>
+</section>
+
+<section class="section" id="servicos">
+  <div class="section-head reveal">
+    <div class="kicker">01 / Serviços</div>
+    <h2>Da manutenção ao <em>software.</em></h2>
+    <p>Uma estrutura tecnológica completa para pessoas, empresas e projetos que precisam de soluções confiáveis.</p>
+  </div>
+
+  <div class="services">
+    <article class="card reveal">
+      <div class="icon">⌘</div><h3>Informática & Suporte</h3>
+      <p>Configuração, diagnóstico, instalação de sistemas, redes, periféricos e suporte técnico para manter sua operação funcionando.</p>
+    </article>
+    <article class="card reveal">
+      <div class="icon">⚡</div><h3>Manutenção & Formatação</h3>
+      <p>Otimização, limpeza lógica, formatação, recuperação de desempenho e preparação de computadores para uso profissional.</p>
+    </article>
+    <article class="card reveal">
+      <div class="icon">▣</div><h3>Software Sob Medida</h3>
+      <p>Sistemas personalizados para automatizar processos, organizar dados, reduzir tarefas manuais e aumentar produtividade.</p>
+    </article>
+    <article class="card reveal">
+      <div class="icon">⌬</div><h3>Aplicativos</h3>
+      <p>Desenvolvimento de aplicações web e mobile com interfaces modernas, responsivas e pensadas para uma excelente experiência.</p>
+    </article>
+    <article class="card reveal">
+      <div class="icon">◈</div><h3>Soluções para Empresas</h3>
+      <p>Digitalização de processos, painéis administrativos, integrações, bancos de dados e ferramentas para gestão.</p>
+    </article>
+    <article class="card reveal">
+      <div class="icon">⟐</div><h3>Consultoria em Tecnologia</h3>
+      <p>Orientação para escolher tecnologias, estruturar projetos e transformar uma necessidade em uma solução digital viável.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="tecnologia">
+  <div class="tech">
+    <div class="section-head reveal">
+      <div class="kicker">02 / Engenharia digital</div>
+      <h2>Construímos tecnologia com <em>propósito.</em></h2>
+      <p>
+        Unimos experiência técnica, desenvolvimento moderno e visão de negócio
+        para criar soluções que realmente resolvem problemas.
+      </p>
+      <div class="stats">
+        <div class="stat"><b>01</b><span>Diagnóstico</span></div>
+        <div class="stat"><b>02</b><span>Estratégia</span></div>
+        <div class="stat"><b>03</b><span>Solução</span></div>
+      </div>
     </div>
 
-    <!-- Cabeçalho / Navbar -->
-    <header>
-        <!-- Logo LinuXis baseada na imagem 2 -->
-        <a href="#" class="logo-container">
-            <div class="logo-text">Linu<span class="x-tech">X</span>is</div>
-            <div class="logo-subtext">Tecnologia que impulsiona o futuro</div>
-        </a>
+    <div class="tech-panel reveal">
+      <div class="terminal">
+        <div class="term-top"><i></i><i></i><i></i></div>
+        <pre><span class="green">linuxis@tech</span>:~$ iniciar-projeto
 
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+<span class="highlight">[01]</span> Analisando necessidade...
+<span class="highlight">[02]</span> Arquitetando solução...
+<span class="highlight">[03]</span> Desenvolvendo interface...
+<span class="highlight">[04]</span> Integrando tecnologia...
+<span class="highlight">[05]</span> Validando performance...
 
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+<span class="green">✓ Sistema pronto para impulsionar seu negócio.</span>
 
-        <a href="contato.html" class="btn-header">
-            Começar Agora <i class="fa-solid fa-arrow-right"></i>
-        </a>
-    </header>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="portfolio.html">Portfólio</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-        <a href="contato.html" class="btn-header">
-            Começar Agora <i class="fa-solid fa-arrow-right"></i>
-        </a>
+<span class="green">linuxis@tech</span>:~$ <span class="highlight">_</span></pre>
+      </div>
     </div>
+  </div>
+</section>
 
-    <!-- Conteúdo Principal -->
-    <main class="hero" id="home">
-        <!-- Tag de Título -->
-        <div class="hero-subtitle-tag">Sistemas de Próxima Geração</div>
+<section class="cta" id="sobre">
+  <div class="kicker">03 / LinuXis</div>
+  <h2 class="reveal">Seu problema pode virar uma <em>solução digital.</em></h2>
+  <p class="reveal">Conte o que você precisa. A LinuXis transforma ideias, necessidades e processos em tecnologia.</p>
+  <a class="btn btn-primary reveal" href="#contato">Vamos conversar →</a>
+</section>
 
-        <!-- Título Principal -->
-        <h1>
-            Engenharia de Software e
-            <span class="highlight-blue">Design Futurista</span>
-        </h1>
+<section class="section" id="contato" style="padding-top:90px;padding-bottom:90px">
+  <div class="section-head reveal">
+    <div class="kicker">04 / Contato</div>
+    <h2>Vamos criar o próximo <em>projeto.</em></h2>
+    <p>Entre em contato para solicitar suporte, manutenção, orçamento ou conversar sobre o desenvolvimento de um sistema ou aplicativo.</p>
+  </div>
+  <div class="actions reveal">
+    <a class="btn btn-primary" href="mailto:linuxis.oficial@gmail.com">Enviar e-mail →</a>
+    <a class="btn btn-ghost" href="https://wa.me/5561996911526" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</section>
+</main>
 
-        <!-- Descrição SEO -->
-        <p class="hero-description">
-            A LinuXis desenvolve ecossistemas virtuais de alta performance, inteligência artificial integrada e arquiteturas escaláveis para impulsionar empresas no mercado digital do amanhã.
-        </p>
+<footer>
+  <strong>LinuXis</strong>
+  <span class="footer-line"></span>
+  <span>TECNOLOGIA QUE IMPULSIONA O FUTURO © 2026</span>
+</footer>
 
-        <!-- Mockup do Laptop Inspirado no Modelo BizNext (Imagem 1) -->
-        <div class="mockup-wrapper">
-            <div class="laptop-frame">
-                <div class="laptop-screen">
-                    <div class="screen-nav">
-                        <div class="screen-logo"><i class="fa-solid fa-bolt"></i> LinuXis</div>
-                        <div class="screen-menu">
-                            <span>Home</span>
-                            <span>Sobre</span>
-                            <span>Projetos</span>
-                        </div>
-                        <button class="btn-screen-small">Contato</button>
-                    </div>
-
-                    <div class="screen-content">
-                        <div class="screen-text">
-                            <h3>Acelere seu Negócio Online</h3>
-                            <p>Soluções digitais inovadoras construídas com inteligência e precisão quântica.</p>
-                            <div class="screen-btns">
-                                <button class="btn-screen-main">Iniciar Agora</button>
-                                <button class="btn-screen-video"><i class="fa-solid fa-play"></i> Ver Vídeo</button>
-                            </div>
-                        </div>
-
-                        <!-- Card de Gráfico Integrado na Tela -->
-                        <div class="screen-chart-card">
-                            <div class="chart-header">
-                                <span>Performance de Dados</span>
-                                <span class="chart-growth">+ 98% Crescimento</span>
-                            </div>
-                            <svg class="chart-svg" viewBox="0 0 200 80">
-                                <path d="M0,60 Q40,50 80,30 T160,20 T200,5" fill="none" stroke="#00f0ff" stroke-width="3" />
-                                <path d="M0,60 Q40,50 80,30 T160,20 T200,5 L200,80 L0,80 Z" fill="rgba(0, 240, 255, 0.15)" />
-                            </svg>
-                        </div>
-                    </div>
-
-                    <!-- Parceiros Integrados -->
-                    <div class="partners-bar">
-                        <span>Liderado por Tecnologias Globais</span>
-                        <span><i class="fa-brands fa-google"></i> Google</span>
-                        <span><i class="fa-brands fa-microsoft"></i> Microsoft</span>
-                        <span><i class="fa-brands fa-slack"></i> Slack</span>
-                    </div>
-                </div>
-            </div>
-            <div class="laptop-base"></div>
-        </div>
-
-        <!-- 4 Cards de Serviços com Vidro Glossy (Conforme Imagem 1) -->
-        <div class="services-grid" id="servicos">
-            <div class="service-card active fade-in">
-                <div class="service-icon">
-                    <i class="fa-solid fa-laptop-code"></i>
-                </div>
-                <h4>Design de Sites</h4>
-                <div class="dots-indicator">
-                    <span></span><span></span><span></span>
-                </div>
-            </div>
-
-            <div class="service-card fade-in">
-                <div class="service-icon">
-                    <i class="fa-solid fa-chart-line"></i>
-                </div>
-                <h4>SEO & Crescimento</h4>
-                <div class="dots-indicator">
-                    <span></span><span></span><span></span>
-                </div>
-            </div>
-
-            <div class="service-card fade-in">
-                <div class="service-icon">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-                <h4>E-Commerce</h4>
-                <div class="dots-indicator">
-                    <span></span><span></span><span></span>
-                </div>
-            </div>
-
-            <div class="service-card fade-in">
-                <div class="service-icon">
-                    <i class="fa-solid fa-headset"></i>
-                </div>
-                <h4>Suporte 24/7</h4>
-                <div class="dots-indicator">
-                    <span></span><span></span><span></span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Estatísticas e Botão de Orçamento (CTA) -->
-        <div class="stats-cta-container fade-in">
-            <div class="stats-group">
-                <div class="stat-item">
-                    <div class="stat-number" id="counter1">500+</div>
-                    <div class="stat-label">Projetos Concluídos</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" id="counter2">98%</div>
-                    <div class="stat-label">Satisfação dos Clientes</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Monitoramento Ativo</div>
-                </div>
-            </div>
-
-            <a href="contato.html" class="btn-cta-large">
-                Solicitar Orçamento <i class="fa-solid fa-arrow-right"></i>
-            </a>
-        </div>
-
-        <!-- Atributos do Rodapé Base -->
-        <div class="qualities-footer fade-in">
-            <span>Moderno</span>
-            <span>Rápido</span>
-            <span>Seguro</span>
-            <span>Escalável</span>
-        </div>
-    </main>
-
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <a href="index.html" class="logo-container">
-                    <div class="logo-text">Linu<span class="x-tech">X</span>is</div>
-                </a>
-                <p>Tecnologia que impulsiona o futuro. Soluções digitais de alta performance.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="footer-column">
-                <h4>Links Rápidos</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="portfolio.html">Portfólio</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Contato</h4>
-                <div class="contact-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>contato@linuxis.tech</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>+55 (11) 99999-9999</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>São Paulo, SP</span>
-                </div>
-            </div>
-            <div class="footer-column">
-                <h4>Horário</h4>
-                <p style="color: var(--text-dim); font-size: 0.9rem;">Seg - Sex: 9h - 18h</p>
-                <p style="color: var(--text-dim); font-size: 0.9rem;">Suporte: 24/7</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 LinuXis. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
