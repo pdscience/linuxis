@@ -1,0 +1,30 @@
+---
+import ServiceModule from "../ServiceModule.astro";
+import ServiceCard from "../ServiceCard.astro";
+import aplicativosBg from "../../assets/services/aplicativos.svg";
+---
+
+<ServiceModule
+  id="aplicativos"
+  kicker="05 / Aplicativos"
+  titleHtml="Sua ideia em <em>todo lugar.</em>"
+  description="Desenvolvimento de aplicações web e mobile com interfaces modernas, responsivas e pensadas para uma excelente experiência."
+  bg={aplicativosBg.src}
+>
+  <div class="tilt-stack">
+    <ServiceCard title="Web e PWA" icon="⌬">
+      <p>Apps que rodam em qualquer navegador, com instalação e modo offline.</p>
+    </ServiceCard>
+    <ServiceCard title="iOS & Android" icon="▤">
+      <p>Aplicativos nativos e híbridos com app stores e atualizações gerenciadas.</p>
+    </ServiceCard>
+  </div>
+  <Fragment slot="aside">
+    <ul class="feature-list">
+      <li>Interfaces modernas e responsivas</li>
+      <li>Experiência pensada no usuário</li>
+      <li>Performance e core vitals otimizados</li>
+      <li>Integração com APIs e bancos de dados</li>
+    </ul>
+  </Fragment>
+</ServiceModule>
