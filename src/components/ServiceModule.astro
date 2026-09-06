@@ -1,0 +1,26 @@
+---
+const { id = "", kicker = "", titleHtml = "", description = "", bg = "" } = Astro.props;
+---
+
+<section class="module" id={id}>
+  {bg && (
+    <div class="module-bg" aria-hidden="true">
+      <img src={bg} alt="" loading="lazy" width="1200" height="800" />
+    </div>
+  )}
+  <div class="module-body">
+    <div class="module-head reveal">
+      <div class="kicker">{kicker}</div>
+      <h2 set:html={titleHtml}></h2>
+      {description && <p>{description}</p>}
+    </div>
+    <div class="module-grid">
+      <div class="reveal">
+        <slot />
+      </div>
+      <div class="reveal">
+        <slot name="aside" />
+      </div>
+    </div>
+  </div>
+</section>
