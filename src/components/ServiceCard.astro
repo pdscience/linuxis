@@ -1,0 +1,11 @@
+---
+const { title = "", icon = "" } = Astro.props;
+---
+
+<article class="glass" data-tilt>
+  {icon && <div class="icon" aria-hidden="true">{icon}</div>}
+  <h3>{title}</h3>
+  <div>
+    <slot />
+  </div>
+</article>

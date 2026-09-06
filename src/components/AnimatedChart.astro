@@ -1,0 +1,32 @@
+---
+const { data = [40, 55, 62, 78, 90, 110], label = "crescimento" } = Astro.props;
+const pts = data.map((v, i) => {
+  const x = 40 + i * 92;
+  const y = 220 - (v / Math.max(...data)) * 170;
+  return { x: Math.round(x), y: Math.round(y) };
+});
+const line = pts
+  .map((p, i) => `${i === 0 ? "M" : "L"}${p.x} ${p.y}`)
+  .join(" ");
+const area = `${line} L${pts[pts.length - 1].x} 250 L${pts[0].x} 250 Z`;
+---
+
+<div class="chart-panel" data-chart data-chart-data={JSON.stringify(data)}>
+  <h4>{label}</h4>
+  <svg class="chart-svg" viewBox="0 0 540 260" role="img" aria-label={`Gráfico: ${label}`}>
+    <defs>
+      <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#00a8ff" stop-opacity="0.35" />
+        <stop offset="100%" stop-color="#00a8ff" stop-opacity="0" />
+      </linearGradient>
+    </defs>
+    {[50, 120, 190].map((gy) => (
+      <line x1="40" y1={gy} x2="520" y2={gy} stroke="rgba(0,168,255,0.12)" stroke-width="1" />
+    ))}
+    <path class="chart-fill" id="chartFill" d={area} />
+    <path class="chart-line" id="chartLine" d={line} pathLength="1" />
+    {pts.map((p, i) => (
+      <circle class="chart-dot" id={`dot-${i}`} cx={p.x} cy={p.y} r="4" />
+    ))}
+  </svg>
+</div>
