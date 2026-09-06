@@ -1,0 +1,67 @@
+---
+import { WHATSAPP_PHONE, EMAIL } from "../constants.js";
+import ServiceCard from "./ServiceCard.astro";
+---
+
+<section class="module" id="contato">
+  <div class="module-body">
+    <div class="module-head reveal">
+      <div class="kicker">Contato</div>
+      <h2>Vamos criar o próximo <em>projeto.</em></h2>
+      <p>Preencha o formulário — sua mensagem abre no WhatsApp pronta para enviar.</p>
+    </div>
+
+    <div class="contact-grid">
+      <form class="form reveal" id="contact-form" novalidate>
+        <label>
+          Nome
+          <input type="text" name="nome" required placeholder="Seu nome" autocomplete="name" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required placeholder="voce@email.com" autocomplete="email" />
+        </label>
+        <label>
+          Serviço
+          <select name="servico" required>
+            <option value="">Selecione...</option>
+            <option value="Google Meu Negócio & Leads">Google Meu Negócio & Leads</option>
+            <option value="Informática & Suporte">Informática & Suporte</option>
+            <option value="Manutenção & Formatação">Manutenção & Formatação</option>
+            <option value="Software Sob Medida">Software Sob Medida</option>
+            <option value="Aplicativos">Aplicativos</option>
+            <option value="Soluções para Empresas">Soluções para Empresas</option>
+            <option value="Consultoria em Tecnologia">Consultoria em Tecnologia</option>
+          </select>
+        </label>
+        <label>
+          Mensagem
+          <textarea name="mensagem" required placeholder="Conte o que você precisa..."></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Enviar pelo WhatsApp →</button>
+        <p class="form-note">
+          Seu navegador abrirá o WhatsApp com a mensagem pronta. Nada é enviado
+          sem a sua confirmação.
+        </p>
+
+        <div class="form-fallback" id="form-fallback">
+          <p class="form-note">Não conseguimos abrir o WhatsApp. Copie a mensagem abaixo ou envie por email:</p>
+          <textarea id="fallback-text" readonly rows="4"></textarea>
+          <a class="btn btn-ghost" href={`mailto:${EMAIL}`}>Enviar por email →</a>
+        </div>
+      </form>
+
+      <div class="contact-info">
+        <ServiceCard title="WhatsApp direto" icon="◎">
+          <p>
+            Prefere conversar agora?
+            <a href={`https://wa.me/${WHATSAPP_PHONE}`} target="_blank" rel="noopener" style="color:#69d8ff">Iniciar conversa →</a>
+          </p>
+        </ServiceCard>
+        <ServiceCard title="Email" icon="✉">
+          <p><a href={`mailto:${EMAIL}`} style="color:#69d8ff">{EMAIL}</a></p>
+        </ServiceCard>
+      </div>
+    </div>
+  </div>
+</section>

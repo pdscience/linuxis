@@ -1,0 +1,36 @@
+---
+const questions = [
+  { q: "Quanto tempo leva para desenvolver um sistema?", a: "Depende da complexidade. Projetos pequenos saem em semanas; sistemas corporativos levam alguns meses. No primeiro contato definimos um cronograma realista." },
+  { q: "Vocês atendem suporte remoto?", a: "Sim. A maioria dos chamados de suporte e manutenção é resolvida remotamente, com diagnóstico rápido e, quando necessário, atendimento presencial." },
+  { q: "Como funcionam os anúncios no Google Meu Negócio?", a: "Criamos e gerenciamos suas campanhas, otimizando palavras-chave e acompanhando leads. Você acompanha os resultados e o retorno investido." },
+  { q: "Preciso de um aplicativo ou de um site?", a: "Depende do seu objetivo. A consultoria avalia seu caso e indica a solução mais econômica e eficaz — sem vender tecnologia desnecessária." },
+  { q: "Vocês oferecem manutenção preventiva?", a: "Sim, com planos agendados de limpeza lógica, atualizações e monitoramento para manter equipamentos e sistemas sempre operando." },
+];
+---
+
+<section class="module" id="faq">
+  <div class="module-body">
+    <div class="module-head reveal">
+      <div class="kicker">FAQ</div>
+      <h2>Perguntas <em>frequentes.</em></h2>
+    </div>
+    <div class="faq">
+      {questions.map((item, i) => (
+        <div class="faq-item">
+          <button
+            class="faq-q"
+            aria-expanded="false"
+            aria-controls={`faq-a-${i}`}
+            data-faq-q
+          >
+            {item.q}
+            <span class="fx" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a" id={`faq-a-${i}`} role="region">
+            <p>{item.a}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
