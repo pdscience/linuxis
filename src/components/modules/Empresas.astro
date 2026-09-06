@@ -1,0 +1,30 @@
+---
+import ServiceModule from "../ServiceModule.astro";
+import ServiceCard from "../ServiceCard.astro";
+import empresasBg from "../../assets/services/empresas.svg";
+---
+
+<ServiceModule
+  id="empresas"
+  kicker="06 / Soluções para Empresas"
+  titleHtml="Digitalização que <em>escala.</em>"
+  description="Digitalização de processos, painéis administrativos, integrações, bancos de dados e ferramentas para gestão."
+  bg={empresasBg.src}
+>
+  <div class="tilt-stack">
+    <ServiceCard title="Painéis Administrativos" icon="◈">
+      <p>Dashboards com métricas do seu negócio em tempo real.</p>
+    </ServiceCard>
+    <ServiceCard title="Integrações & Gestão" icon="⇆">
+      <p>ERP, CRM e APIs conectados para dados fluindo sem duplicação.</p>
+    </ServiceCard>
+  </div>
+  <Fragment slot="aside">
+    <ul class="feature-list">
+      <li>Digitalização de processos operacionais</li>
+      <li>Bancos de dados seguros e organizados</li>
+      <li>Automação de relatórios e rotinas</li>
+      <li>Suporte a múltiplos usuários e marcas</li>
+    </ul>
+  </Fragment>
+</ServiceModule>
