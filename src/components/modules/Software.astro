@@ -1,0 +1,38 @@
+---
+import ServiceModule from "../ServiceModule.astro";
+import ServiceCard from "../ServiceCard.astro";
+import softwareBg from "../../assets/services/software.svg";
+---
+
+<ServiceModule
+  id="software"
+  kicker="04 / Software Sob Medida"
+  titleHtml="Sistemas que automatizam o que <em>cansa</em>."
+  description="Sistemas personalizados para automatizar processos, organizar dados, reduzir tarefas manuais e aumentar produtividade."
+  bg={softwareBg.src}
+>
+  <div class="tilt-stack">
+    <ServiceCard title="Automação de Processos" icon="▣">
+      <p>Fluxos manuais viram pipelines digitais com menos erro e mais velocidade.</p>
+    </ServiceCard>
+    <ServiceCard title="Organização de Dados" icon="▤">
+      <p>Bancos de dados, relatórios e painéis para decidir com informação.</p>
+    </ServiceCard>
+  </div>
+  <Fragment slot="aside">
+    <div class="terminal" aria-hidden="true">
+      <div class="term-top"><i></i><i></i><i></i></div>
+      <pre><span class="green">linuxis@tech</span>:~$ iniciar-projeto
+
+<span class="highlight">[01]</span> Analisando necessidade...
+<span class="highlight">[02]</span> Arquitetando solução...
+<span class="highlight">[03]</span> Desenvolvendo interface...
+<span class="highlight">[04]</span> Integrando tecnologia...
+<span class="highlight">[05]</span> Validando performance...
+
+<span class="green">✓ Sistema pronto para impulsionar seu negócio.</span>
+
+<span class="green">linuxis@tech</span>:~$ <span class="highlight">_</span></pre>
+    </div>
+  </Fragment>
+</ServiceModule>
