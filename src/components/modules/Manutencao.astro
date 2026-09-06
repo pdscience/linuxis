@@ -1,0 +1,22 @@
+---
+import ServiceModule from "../ServiceModule.astro";
+import AnimatedChart from "../AnimatedChart.astro";
+import manutencaoBg from "../../assets/services/manutencao.svg";
+---
+
+<ServiceModule
+  id="manutencao"
+  kicker="03 / Manutenção & Formatação"
+  titleHtml="De volta ao <em>desempenho</em> máximo."
+  description="Otimização, limpeza lógica, formatação, recuperação de desempenho e preparação de computadores para uso profissional."
+  bg={manutencaoBg.src}
+>
+  <div class="stages">
+    <div class="stage"><b>01</b><span>Diagnóstico de performance</span></div>
+    <div class="stage"><b>02</b><span>Limpeza lógica & otimização</span></div>
+    <div class="stage"><b>03</b><span>Formatação com perfil profissional</span></div>
+  </div>
+  <Fragment slot="aside">
+    <AnimatedChart label="performance após otimização" data={[30, 38, 45, 58, 72, 84]} />
+  </Fragment>
+</ServiceModule>
