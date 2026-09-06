@@ -203,7 +203,7 @@ img, svg { display: block; max-width: 100%; }
 }
 .chart-panel h4 { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 18px; }
 .chart-svg { width: 100%; height: auto; }
-.chart-line { stroke: var(--blue); stroke-width: 2.5; fill: none; stroke-linecap: round; }
+.chart-line { stroke: var(--blue); stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-dasharray: 1; }
 .chart-fill { fill: url(#chartGrad); }
 .chart-dot { fill: #fff; stroke: var(--blue); stroke-width: 2; }
 
