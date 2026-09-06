@@ -52,10 +52,30 @@ export function animateHero() {
   gsap.from(hero.querySelectorAll(".hero-content > *"), {
     y: 60, opacity: 0, duration: 1, stagger: 0.12, ease: "power3.out", delay: 0.15,
   });
-  gsap.to(".hero-media img, .hero-media", {
+  gsap.to(".hero-media img", {
     yPercent: 12, ease: "none",
     scrollTrigger: { trigger: hero, start: "top top", end: "bottom top", scrub: true },
   });
+
+  const media = hero.querySelector(".hero-media");
+  if (media && window.matchMedia("(hover: hover)").matches) {
+    const img = media.querySelector("img");
+    const range = 18;
+    if (img) {
+      media.addEventListener("pointermove", (e) => {
+        const r = media.getBoundingClientRect();
+        const nx = (e.clientX - r.left) / r.width - 0.5;
+        const ny = (e.clientY - r.top) / r.height - 0.5;
+        gsap.to(img, {
+          x: nx * range * 2, y: ny * range * 2,
+          duration: 0.6, ease: "power2.out", overwrite: "auto",
+        });
+      });
+      media.addEventListener("pointerleave", () => {
+        gsap.to(img, { x: 0, y: 0, duration: 0.8, ease: "power2.out", overwrite: "auto" });
+      });
+    }
+  }
 }
 
 export function registerScroll() {
