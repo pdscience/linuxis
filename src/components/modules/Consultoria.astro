@@ -1,0 +1,30 @@
+---
+import ServiceModule from "../ServiceModule.astro";
+import ServiceCard from "../ServiceCard.astro";
+import consultoriaBg from "../../assets/services/consultoria.svg";
+---
+
+<ServiceModule
+  id="consultoria"
+  kicker="07 / Consultoria em Tecnologia"
+  titleHtml="Decisões técnicas com <em>clareza.</em>"
+  description="Orientação para escolher tecnologias, estruturar projetos e transformar uma necessidade em uma solução digital viável."
+  bg={consultoriaBg.src}
+>
+  <div class="tilt-stack">
+    <ServiceCard title="Diagnóstico" icon="⟐">
+      <p>Mapeamento de necessidades e pontos de dor antes de qualquer solução.</p>
+    </ServiceCard>
+    <ServiceCard title="Estratégia & Roadmap" icon="◎">
+      <p>Plano de curto, médio e longo prazo alinhado ao objetivo do negócio.</p>
+    </ServiceCard>
+  </div>
+  <Fragment slot="aside">
+    <ul class="feature-list">
+      <li>Escolha da stack certa para o projeto</li>
+      <li>Viabilidade técnica e de custo</li>
+      <li>Estruturação de escopo e entregas</li>
+      <li>Acompanhamento após o lançamento</li>
+    </ul>
+  </Fragment>
+</ServiceModule>
