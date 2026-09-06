@@ -1,0 +1,30 @@
+---
+import ServiceModule from "../ServiceModule.astro";
+import ServiceCard from "../ServiceCard.astro";
+import suporteBg from "../../assets/services/suporte.svg";
+---
+
+<ServiceModule
+  id="suporte"
+  kicker="02 / Informática & Suporte"
+  titleHtml="Diagnóstico rápido, <em>operação</em> no ar."
+  description="Configuração, diagnóstico, instalação de sistemas, redes, periféricos e suporte técnico para manter sua operação funcionando."
+  bg={suporteBg.src}
+>
+  <div class="tilt-stack">
+    <ServiceCard title="Suporte Técnico" icon="⌘">
+      <p>Atendimento remoto e presencial para resolver o que travou — rápido.</p>
+    </ServiceCard>
+    <ServiceCard title="Redes & Periféricos" icon="⇆">
+      <p>Estrutura de rede, impressoras, roteadores e conectividade de ponta a ponta.</p>
+    </ServiceCard>
+  </div>
+  <Fragment slot="aside">
+    <ul class="feature-list">
+      <li>Diagnóstico de hardware e software</li>
+      <li>Instalação e configuração de sistemas</li>
+      <li>Suporte para equipes e home office</li>
+      <li>Manutenção preventiva agendada</li>
+    </ul>
+  </Fragment>
+</ServiceModule>
