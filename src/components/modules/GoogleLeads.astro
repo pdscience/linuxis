@@ -1,0 +1,26 @@
+---
+import ServiceModule from "../ServiceModule.astro";
+import ServiceCard from "../ServiceCard.astro";
+import AnimatedChart from "../AnimatedChart.astro";
+import googleBg from "../../assets/services/google.svg";
+---
+
+<ServiceModule
+  id="servicos"
+  kicker="01 / Google Meu Negócio & Leads"
+  titleHtml="Seu negócio <em>visível</em> e gerando clientes."
+  description="Criação e otimização de anúncios no Google Meu Negócio, captação de leads qualificados e estratégias para aumentar o desempenho dos seus serviços e presença digital."
+  bg={googleBg.src}
+>
+  <div class="tilt-stack">
+    <ServiceCard title="Anúncios no Google" icon="◎">
+      <p>Configuração e gestão de campanhas no Google Meu Negócio com foco em conversão local.</p>
+    </ServiceCard>
+    <ServiceCard title="Captação de Leads" icon="⌁">
+      <p>Estratégias de formulário, WhatsApp e rastreio para transformar visitas em contatos.</p>
+    </ServiceCard>
+  </div>
+  <Fragment slot="aside">
+    <AnimatedChart label="leads qualificados / mês" data={[24, 38, 41, 63, 78, 95]} />
+  </Fragment>
+</ServiceModule>
