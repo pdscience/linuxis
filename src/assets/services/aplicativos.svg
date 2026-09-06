@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" width="1200" height="800" role="img" aria-hidden="true">
+  <defs>
+    <radialGradient id="ap-bg" cx="32%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#06203a"/>
+      <stop offset="60%" stop-color="#030814"/>
+      <stop offset="100%" stop-color="#01040a"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#ap-bg)"/>
+  <g transform="translate(760 240)" opacity="0.9">
+    <rect x="0" y="0" width="200" height="340" rx="30" fill="none" stroke="#00a8ff" stroke-width="2.5"/>
+    <line x1="80" y1="0" x2="120" y2="0" stroke="#00a8ff" stroke-width="3"/>
+    <g transform="translate(24 40)">
+      <rect x="0" y="0" width="56" height="68" rx="8" fill="rgba(0,168,255,0.12)" stroke="#31d4ff" stroke-width="1.5"/>
+      <rect x="0" y="88" width="56" height="68" rx="8" fill="rgba(0,168,255,0.12)" stroke="#31d4ff" stroke-width="1.5"/>
+      <rect x="76" y="0" width="56" height="68" rx="8" fill="rgba(0,168,255,0.12)" stroke="#31d4ff" stroke-width="1.5"/>
+      <rect x="76" y="88" width="56" height="68" rx="8" fill="rgba(0,168,255,0.12)" stroke="#31d4ff" stroke-width="1.5"/>
+    </g>
+    <line x1="60" y1="300" x2="140" y2="300" stroke="#00a8ff" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g opacity="0.45" font-family="monospace" fill="#8da2b9" font-size="16">
+    <text x="120" y="600">platform: web® | ios | android | pwa</text>
+    <text x="120" y="632">responsive: 100% devices</text>
+    <text x="120" y="664">core_vitals: 95+</text>
+  </g>
+</svg>

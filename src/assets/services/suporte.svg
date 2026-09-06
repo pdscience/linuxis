@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" width="1200" height="800" role="img" aria-hidden="true">
+  <defs>
+    <radialGradient id="s-bg" cx="60%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#06203a"/>
+      <stop offset="60%" stop-color="#030814"/>
+      <stop offset="100%" stop-color="#01040a"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#s-bg)"/>
+  <g opacity="0.5">
+    <line x1="120" y1="80" x2="1080" y2="80" stroke="#00a8ff" stroke-width="1"/>
+    <line x1="120" y1="720" x2="1080" y2="720" stroke="#00a8ff" stroke-width="1"/>
+  </g>
+  <g transform="translate(760 240)" opacity="0.9">
+    <rect x="0" y="0" width="230" height="230" rx="18" fill="rgba(0,168,255,0.05)" stroke="#00a8ff" stroke-width="2"/>
+    <path d="M0 34h230M74 0v230M154 0v230M0 96h230M0 156h230" stroke="#31d4ff" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="37" cy="37" r="14" fill="none" stroke="#31d4ff" stroke-width="2"/>
+    <path d="M115 115l20 20M135 115l-20 20" stroke="#6bffa7" stroke-width="2.5"/>
+    <circle cx="115" cy="115" r="6" fill="#00a8ff"/>
+    <circle cx="190" cy="60" r="5" fill="#31d4ff"/>
+    <circle cx="60" cy="200" r="5" fill="#31d4ff"/>
+  </g>
+  <g opacity="0.45" font-family="monospace" fill="#8da2b9" font-size="16">
+    <text x="120" y="600">diag: hw_status = OK</text>
+    <text x="120" y="632">net: ping → 12ms</text>
+    <text x="120" y="664">peripherals: linked</text>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" width="1200" height="800" role="img" aria-hidden="true">
+  <defs>
+    <radialGradient id="g-bg" cx="40%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#06203a"/>
+      <stop offset="60%" stop-color="#030814"/>
+      <stop offset="100%" stop-color="#01040a"/>
+    </radialGradient>
+    <linearGradient id="g-cyan" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00a8ff"/>
+      <stop offset="100%" stop-color="#31d4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g-bg)"/>
+  <path d="M0 200H900V80" stroke="#00a8ff" stroke-width="1.2" fill="none" opacity="0.5"/>
+  <path d="M0 600H1200" stroke="#00a8ff" stroke-width="1.2" fill="none" opacity="0.5"/>
+  <g transform="translate(760 250)" opacity="0.85">
+    <circle cx="70" cy="70" r="46" fill="none" stroke="#31d4ff" stroke-width="2.5"/>
+    <path d="M70 26v14M70 100v14M26 70h14M100 70h14" stroke="#00a8ff" stroke-width="2.5"/>
+    <path d="M45 45l18 18M95 95l-18-18" stroke="#00a8ff" stroke-width="2.5"/>
+    <path d="M70 150l30 40M70 150l-30 40M100 190h-60" stroke="url(#g-cyan)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <polyline points="70,150 100,160 130,150 165,140 195,148 235,120" fill="none" stroke="#6bffa7" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g opacity="0.4" font-family="monospace" fill="#8da2b9" font-size="16">
+    <text x="120" y="620">map_pin = loc(55.7, -37.5)</text>
+    <text x="120" y="652">leads += ad_optimize()</text>
+    <text x="120" y="684">reach *= 1.8</text>
+  </g>
+</svg>
