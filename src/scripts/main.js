@@ -34,6 +34,15 @@ function setupNav() {
       track("nav_click", { link: a.getAttribute("href") });
     })
   );
+
+  // Dropdown toggle no mobile
+  const dropBtn = $("#navDropBtn");
+  const dropMenu = $("#navDropMenu");
+  dropBtn?.addEventListener("click", (e) => {
+    e.preventDefault();
+    const open = dropMenu?.classList.toggle("open");
+    dropBtn?.setAttribute("aria-expanded", String(!!open));
+  });
 }
 
 function setupCursorGlow() {

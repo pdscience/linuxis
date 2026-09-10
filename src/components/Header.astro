@@ -9,9 +9,50 @@ import logo from "../assets/logo.png";
   <button class="menu" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">☰</button>
   <div class="nav-links" id="navLinks">
     <a href="#inicio">Início</a>
-    <a href="#servicos">Serviços</a>
+    <div class="nav-dropdown">
+      <button class="nav-drop-btn" id="navDropBtn" aria-expanded="false">Serviços ▾</button>
+      <div class="nav-dropdown-menu" id="navDropMenu">
+        <a href="#servicos">Google Meu Negócio</a>
+        <a href="#suporte">Suporte Técnico</a>
+        <a href="#manutencao">Manutenção</a>
+        <a href="#software">Software</a>
+        <a href="#aplicativos">Aplicativos</a>
+        <a href="#consultoria">Consultoria</a>
+      </div>
+    </div>
     <a href="#empresas">Empresas</a>
+    <a href="#sobre">Sobre</a>
     <a href="#faq">FAQ</a>
     <a class="nav-cta" href="#contato">Fale conosco</a>
   </div>
 </nav>
+
+<style is:global>
+  .nav-dropdown { position: relative; }
+  .nav-drop-btn {
+    background: none; border: 0; color: #b9c9d9; cursor: pointer;
+    font: inherit; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase;
+    font-weight: 600; padding: 6px 4px; display: inline-flex; align-items: center; gap: 5px;
+  }
+  .nav-drop-btn:hover, .nav-dropdown:hover .nav-drop-btn { color: #fff; text-shadow: 0 0 15px var(--blue); }
+  .nav-dropdown-menu {
+    position: absolute; top: 100%; left: 0; min-width: 200px;
+    background: rgba(2, 8, 16, 0.97); border: 1px solid var(--line);
+    border-radius: 12px; padding: 8px 0; display: none; flex-direction: column; gap: 2px;
+    z-index: 1001;
+  }
+  .nav-dropdown:hover .nav-dropdown-menu, .nav-dropdown.open .nav-dropdown-menu { display: flex; }
+  .nav-dropdown-menu a {
+    padding: 10px 16px; color: #b9c9d9; font-size: 0.82rem; letter-spacing: 0.04em;
+    transition: 0.2s;
+  }
+  .nav-dropdown-menu a:hover { background: rgba(0, 168, 255, 0.08); color: #fff; }
+  @media (max-width: 900px) {
+    .nav-dropdown-menu {
+      position: static; background: transparent; border: 0; padding: 0;
+      display: none; flex-direction: column; gap: 0;
+    }
+    .nav-links.open .nav-dropdown-menu { display: flex; }
+    .nav-dropdown-menu a { padding: 12px 18px; border-top: 1px solid rgba(0, 168, 255, 0.08); }
+  }
+</style>
